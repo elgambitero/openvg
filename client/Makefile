@@ -26,3 +26,10 @@ clip:	clip.c ../libshapes.o ../oglinit.o
 
 indent:
 	indent -linux -c 60 -brf -l 132 shapedemo.c hellovg.c mouse-hellovg.c particles.c screensize.c
+
+rect:  rectangle.c ../libshapes.o ../oglinit.o
+	gcc -Wall $(INCLUDEFLAGS) -o rectangle rectangle.c ../libshapes.o ../oglinit.o $(LIBFLAGS)
+
+poly:  polyline.c ../libshapes.o ../oglinit.o
+	gcc -Wall $(INCLUDEFLATS -o polyline polyline.c ../libshapes.o ../oglinit.o $(LIBFLAGS)
+	
